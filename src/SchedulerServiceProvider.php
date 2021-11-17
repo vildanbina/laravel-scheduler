@@ -28,6 +28,7 @@ class SchedulerServiceProvider extends ServiceProvider
             $this->loadMigrationsFrom(__DIR__.'/migrations');
         }
 
+        $this->mergeConfigFrom(__DIR__ . '/config/scheduler.php', 'scheduler');
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
 
         $this->loadViewsFrom(__DIR__.'/views', 'scheduler');
