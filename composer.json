@@ -1,0 +1,34 @@
+{
+  "name": "vildanbina/laravel-scheduler",
+  "description": "Service for scheduling and managing cron tasks in laravel application",
+  "keywords": [
+    "Scheduler",
+    "laravel",
+    "cron",
+    "schedule",
+    "tasks"
+  ],
+  "type": "library",
+  "version": "v1.0.4",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vildan Bina",
+      "email": "vildanbina@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "vildanbina\\Scheduler\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "vildanbina\\Scheduler\\SchedulerServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {}
+}
